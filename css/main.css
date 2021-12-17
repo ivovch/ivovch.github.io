@@ -268,6 +268,7 @@ a:hover{
 
 .companyServices-section{
     padding: 100px 0;
+    background-color: #efefef;
 }
 .companyServices-section h2{
     text-align: center;
@@ -290,6 +291,7 @@ a:hover{
     align-items: flex-start;
     margin-top: 50px;
     padding: 0 25px;
+    
 }
 .services-item img{
     width: 100%;
