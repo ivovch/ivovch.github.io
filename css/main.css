@@ -72,6 +72,10 @@ a:hover{
     color: #ffffff;
     font-weight: 600;
     margin: 0 10px;
+    opacity: .5;
+}
+.lang-block .lang-btn.active{
+    opacity: 1;
 }
 .lang-block .lang-btn img{
     z-index: 5;
@@ -291,7 +295,7 @@ a:hover{
     align-items: flex-start;
     margin-top: 50px;
     padding: 0 25px;
-    
+
 }
 .services-item img{
     width: 100%;

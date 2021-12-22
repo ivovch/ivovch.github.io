@@ -1,3 +1,5 @@
+import langArr from './lang.js';
+
 const mainSectionTitle = document.querySelector('.mainSection-title');
 const form = document.querySelector('.form-block form');
 const nameInput = document.querySelector('.input-name');
@@ -14,11 +16,11 @@ let telInp = window.intlTelInput(phoneInput, {
 
 
 window.onload = () => {
-    if(document.documentElement.clientWidth > 768){
+    if (document.documentElement.clientWidth > 768) {
         setTimeout(() => {
             mainSectionTitle.classList.add('active');
         }, 5500)
-    } else{
+    } else {
         setTimeout(() => {
             mainSectionTitle.classList.add('active');
         }, 1000)
@@ -36,14 +38,14 @@ navElements.forEach(navElement => {
     });
 });
 formLinkButtons.forEach(btn => {
-    btn.addEventListener('click', function(e){
+    btn.addEventListener('click', function (e) {
         form.scrollIntoView({
             behavior: 'smooth',
             block: "center"
         })
     });
 });
-showMenuBtn.addEventListener('click', function(e){
+showMenuBtn.addEventListener('click', function (e) {
     e.preventDefault();
     let menu = document.querySelector('.header-container');
     let changingBtn = document.querySelector('.showMenu-btn .containerBtn');
@@ -82,3 +84,31 @@ form.addEventListener('submit', function (e) {
         console.log('Успех!!!');
     }
 });
+
+
+const langButtons = document.querySelectorAll('.lang-block .lang-btn');
+
+langButtons.forEach(item => {
+    item.addEventListener('click', changeLang)
+})
+
+function changeLang(e) {
+    langButtons.forEach(item => item.classList.remove('active'));
+    this.classList.add('active');
+    e.preventDefault();
+    // const currentLang = this.className.split('lang-btn')[1].trim();
+    const currentLang = this.className.split(' ')[1].trim();
+    for (let classKey in langArr) {
+        document.querySelectorAll(`.lng-${classKey}`).forEach(element => {
+            element.innerText = langArr[classKey][currentLang];
+        })
+    }
+}
+
+
+
+
+
+
+
+

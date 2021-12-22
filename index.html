@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title class="lng-title"></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="build/css/intlTelInput.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="//code-eu1.jivosite.com/widget/No0pEkwKSL" async></script>
+
 </head>
 <body>
 
@@ -33,19 +35,19 @@
             </div>
             <nav class="col-lg-6 col-md-12 nav-block">
 <!--                <a href="#">Главная</a>-->
-                <a class="scrollTo" href="companyServices-section">Услуги компании</a>
-                <a class="scrollTo" href="team-section">Наша команда</a>
-                <a class="scrollTo" href="contacts-section">Результаты нашей работы</a>
+                <a class="scrollTo lng-menu1" href="companyServices-section">Услуги компании</a>
+                <a class="scrollTo lng-menu2" href="team-section">Наша команда</a>
+                <a class="scrollTo lng-menu3" href="contacts-section">Результаты нашей работы</a>
             </nav>
             <div class="col-lg-3 col-md-12 lang-block">
-                <a class="contacts-btn scrollTo" href="contacts-section">Контакты</a>
-                <a class="lang-btn" href="#">
+                <a class="contacts-btn scrollTo lng-contactsBtn" href="contacts-section">Контакты</a>
+                <a class="lang-btn en" href="#">
                     <img src="img/geo/uk.png" alt="">
                 </a>
-                <a class="lang-btn" href="#">
+                <a class="lang-btn ru active" href="#">
                     <img src="img/geo/ru.png" alt="">
                 </a>
-                <a class="lang-btn" href="#">
+                <a class="lang-btn nl" href="#">
                     <img src="img/geo/nl.png" alt="">
                 </a>
             </div>
@@ -54,10 +56,10 @@
     <div class="container section-wrapper">
         <div class="row justify-content-between">
             <div class="col-lg-6 col-md-6 col-xs-12 mainSection-title">
-                <h1>
+                <h1 class="lng-s1Title">
                     Возвращаем Ваши похищенные средства﻿ в течении 14 дней без предоплат за наши услуги!
                 </h1>
-                <h5>Лучшие русскоязычные юристы Европы.</h5>
+                <h5 class="lng-s1SubTitle">Лучшие русскоязычные юристы Европы.</h5>
             </div>
             <div class="col-sm-12 mobile-video">
                 <video controls poster="img/bg.png">
@@ -66,76 +68,76 @@
             </div>
             <div class="col-lg-4 col-md-6 mainSection-form">
                 <div class="form-block">
-                    <p class="form-title">Оставьте заявку на бесплатную консультацию</p>
+                    <p class="form-title lng-formTitle">Оставьте заявку на бесплатную консультацию</p>
                     <form action="">
-                        <input type="text" name="Name" placeholder="ФИО" class="input-name">
-                        <input type="text" name="Email" placeholder="Почта" class="input-mail">
+                        <input type="text" name="Name" placeholder="Full name" class="input-name">
+                        <input type="text" name="Email" placeholder="Mail" class="input-mail">
                         <input type="tel" id="phone">
-                        <button type="submit">Оставить заявку</button>
+                        <button type="submit" class="btnSubmit lng-formBtn">Оставить заявку</button>
                     </form>
-                    <p class="form-subtitle">By signing up, you agree to our Privacy Policy.</p>
+                    <p class="form-subtitle ">By signing up, you agree to our Privacy Policy.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <section class="companyServices-section">
     <div class="container">
         <div class="row">
-            <h2>Услуги компании</h2>
-            <h5>Наша команда работает со следующими случаями</h5>
+            <h2 class="lng-s2Title">Услуги компании</h2>
+            <h5 class="lng-s2SubTitle">Наша команда работает со следующими случаями</h5>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 services-item">
                 <img src="img/services/forex.jpg" alt="">
-                <h5>Forex и CFD Мошенничество</h5>
-                <p>Forex и CFD - популярный метод хищения средств у граждан Европы и СНГ. Наши специалисты успешно возвращают больше 96% средств.</p>
-                <button class="form-link">Вернуть деньги</button>
+                <h5 class="lng-s2ItemTitle1">Forex и CFD Мошенничество</h5>
+                <p class="lng-s2ItemSubTitle1">Forex и CFD - популярный метод хищения средств у граждан Европы и СНГ. Наши специалисты успешно возвращают больше 96% средств.</p>
+                <button class="form-link lng-s2BtnText">Вернуть деньги</button>
             </div>
             <div class="col-lg-4 col-md-6 services-item">
                 <img src="img/services/crypto.png" alt="">
-                <h5>Криптоинвестиции</h5>
-                <p>Современные мошенники чаще всего прибегают к этому методу, так как они не только
+                <h5 class="lng-s2ItemTitle2">Криптоинвестиции</h5>
+                <p class="lng-s2ItemSubTitle2">Современные мошенники чаще всего прибегают к этому методу, так как они не только
                     похищают ваши средства, а и зарабатывают на их росте. Наша компания располагает штатом специалистов имеющих опыт в возврате таких платежей.</p>
-                <button class="form-link">Вернуть деньги</button>
+                <button class="form-link lng-s2BtnText">Вернуть деньги</button>
             </div>
             <div class="col-lg-4 col-md-6 services-item">
                 <img src="img/services/piramid.jpg" alt="">
-                <h5>Финансовые пирамиды</h5>
-                <p>Уже 2021 год, но многие до сих пор надеются заработать на подобных, заведомо обреченных проектах, в данном случае наши специалисты помогут Вам оформить услугу chargeback</p>
-                <button class="form-link">Вернуть деньги</button>
+                <h5 class="lng-s2ItemTitle3">Финансовые пирамиды</h5>
+                <p class="lng-s2ItemSubTitle3">Уже 2021 год, но многие до сих пор надеются заработать на подобных, заведомо обреченных проектах, в данном случае наши специалисты помогут Вам оформить услугу chargeback</p>
+                <button class="form-link lng-s2BtnText">Вернуть деньги</button>
             </div>
             <div class="col-lg-4 col-md-6 services-item">
                 <img src="img/services/carders.jpg" alt="">
-                <h5>Мошенничество с банковскими картами</h5>
-                <p>Если вы совершаете онлайн покупки, рано или поздно у вас похитят средства с банковской карты, благодоря нашим партёрам в visa mastercard возврат возможно получить уже через 5 дней!</p>
-                <button class="form-link">Вернуть деньги</button>
+                <h5 class="lng-s2ItemTitle4">Мошенничество с банковскими картами</h5>
+                <p class="lng-s2ItemSubTitle4">Если вы совершаете онлайн покупки, рано или поздно у вас похитят средства с банковской карты, благодоря нашим партёрам в visa mastercard возврат возможно получить уже через 5 дней!</p>
+                <button class="form-link lng-s2BtnText">Вернуть деньги</button>
             </div>
             <div class="col-lg-4 col-md-6 services-item">
                 <img src="img/services/opciones.jpg" alt="">
-                <h5>Бинарные опционы</h5>
-                <p>Ставший популярным метод хищения средств - организация бинарных опционов с которых невозможно получить выплату самостоятельно.</p>
-                <button class="form-link">Вернуть деньги</button>
+                <h5 class="lng-s2ItemTitle5">Бинарные опционы</h5>
+                <p class="lng-s2ItemSubTitle5">Ставший популярным метод хищения средств - организация бинарных опционов с которых невозможно получить выплату самостоятельно.</p>
+                <button class="form-link lng-s2BtnText">Вернуть деньги</button>
             </div>
             <div class="col-lg-4 col-md-6 services-item">
                 <img src="img/services/scammers.jpg" alt="">
-                <h5>Юристы-мошенники</h5>
-                <p>Юристы которые работают без компании, регистрации, документов, договора - это те же самые брокеры мошенники, под видом оплаты за свои услуги, деньги продолжают поступать на подконтрольные им счета.</p>
-                <button class="form-link">Вернуть деньги</button>
+                <h5 class="lng-s2ItemTitle6">Юристы-мошенники</h5>
+                <p class="lng-s2ItemSubTitle6">Юристы которые работают без компании, регистрации, документов, договора - это те же самые брокеры мошенники, под видом оплаты за свои услуги, деньги продолжают поступать на подконтрольные им счета.</p>
+                <button class="form-link lng-s2BtnText">Вернуть деньги</button>
             </div>
         </div>
     </div>
 </section>
-
 
 <section class="container-fluid ceo-section">
     <div class="row">
         <div class="col-lg-6 col-md-6 ceo-description">
             <h2>Martins Akkerman</h2>
             <h5>CEO Director</h5>
-            <p>Главный юрисконсульт и CEO компании — Martins Akkerman
+            <p class="lng-s3p1">Главный юрисконсульт и CEO компании — Martins Akkerman
                 Более 15 лет юридической практики. Опыт сотруднечества с службами безопастности Swedbank, SEB bank и Citadele bank.</p>
-            <p>Последних 5 лет успешной борьбы с интернет-мошенничеством.
+            <p class="lng-s3p2">Последних 5 лет успешной борьбы с интернет-мошенничеством.
                 За это время удалось навсегда пресечь деятельность 29 компаний-аферистов и вернуть более 12 млн. евро пострадавшим.
                 Наличие внештатных консультантов и специалистов по всему миру и в различных сферах: банковская сфера, правоохранительные органы, спецслужбы, международные банковские и финансовые регуляторы, ведущие специалисты криптовалют и платежных систем.</p>
         </div>
@@ -146,8 +148,8 @@
 <section class="container-fluid team-section">
     <div class="container">
         <div class="row">
-            <h2>Наша команда</h2>
-            <h5>Ведущие специалисты компании </h5>
+            <h2 class="lng-s4Title">Наша команда</h2>
+            <h5 class="lng-s4SubTitle">Ведущие специалисты компании </h5>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 team-item-wrap">
@@ -199,18 +201,18 @@
 <section class="container-fluid contacts-section">
     <div class="row">
         <div class="col-md-6 contacts-block">
-            <h2>Контакты</h2>
-            <h5>Lawyer's Paradise Holding </h5>
-            <h5>Входящая линия:</h5>
-            <h5>Адрес:</h5>
-            <h5>Почта:</h5>
-            <button class="form-link">Записаться на консультацию</button>
+            <h2 class="lng-s5Contacts">Контакты</h2>
+            <h5 class="">Lawyer's Paradise Holding </h5>
+            <h5 class="lng-s5IncomingLine">Входящая линия:</h5>
+            <h5 class="lng-s5Address">Адрес:</h5>
+            <h5 class="lng-s5Mail">Почта:</h5>
+            <button class="form-link lng-s5Button">Записаться на консультацию</button>
         </div>
         <div class="col-md-6 ceo-image"></div>
     </div>
 </section>
 
 <script src="build/js/intlTelInput.min.js"></script>
-<script src="js/index.js"></script>
+<script src="js/index.js" type="module"></script>
 </body>
 </html>
