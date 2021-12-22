@@ -9,7 +9,7 @@ const formLinkButtons = document.querySelectorAll('.form-link');
 const navElements = document.querySelectorAll('.header-container a.scrollTo');
 const showMenuBtn = document.querySelector('.showMenu-btn');
 let telInp = window.intlTelInput(phoneInput, {
-    utilsScript: "/landing/build/js/utils.js",
+    utilsScript: "../build/js/utils.js",
     initialCountry: "ua",
     separateDialCode: true,
 });
